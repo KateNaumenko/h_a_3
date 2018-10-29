@@ -1,0 +1,36 @@
+table {
+  margin: 2em auto;
+  border: 1px double;
+  border-left-color: #C0C0C0;
+  border-top-color: #C0C0C0;
+  border-right-color: #696969;
+  border-bottom-color: #696969;
+}
+
+.second_table,
+.third_table {
+  width: 40em;
+}
+
+.third_table th {
+  text-align: left;
+}
+
+.third_table {
+  border-collapse: collapse;
+  border-width: 2px;
+}
+
+th,
+td{
+  padding: 5px;
+  border: 1px double;
+  border-left-color: #696969;
+  border-top-color: #696969;
+  border-right-color: #C0C0C0;
+  border-bottom-color: #C0C0C0;
+}
+
+h1 {
+  text-align: center;
+}

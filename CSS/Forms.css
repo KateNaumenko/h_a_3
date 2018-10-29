@@ -1,0 +1,34 @@
+body {
+  margin: 3em 6em;
+}
+
+ul {
+  list-style: none;
+}
+
+.briefly_about_yourself li,
+.other_design li:first-child {
+  padding: 10px 0;
+}
+
+fieldset {
+  margin-top: 2.5em;
+}
+
+h4,
+select,
+.in_conclusion span {
+ margin-left: 40px;
+}
+
+.in_conclusion h4:first-child {
+  margin-bottom: 0;
+}
+
+#s_but {
+  margin: 1em 0;
+}
+
+.smaller {
+  font-size: 14px;
+}

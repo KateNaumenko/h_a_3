@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Форми: теги та їх атрибути</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Демонстрація роботи тегів та атрибутів форм">
+  <link rel="stylesheet" type="text/css" href="./CSS/Forms.css">
+</head>
+<body>
+  <header>
+    <h1>Урок "Форми": теги та їх атрибути.</h1>
+    <h2>Розкажіть про себе...</h2>
+    <span>Це - спроба створити форму за зразком.</span>
+  </header>
+  <main>
+    <form>
+      <fieldset class="briefly_about_yourself">
+        <legend><b>Коротко про себе</b></legend>
+        <ul>
+          <li>
+            <label for="name">Ім'я:</label>
+            <input type="text" name="name" id="name" size="25">
+          </li>
+          <li>
+            <label for="surname">Прізвище:</label>
+            <input type="text" name="surname" id="surname" size="25">
+          </li>
+          <li>
+            <label>Стать:</label>
+            <input type="radio" name="sex" id="male" checked="">
+            <label for="male">чоловіча</label>
+            <input type="radio" name="sex" id="female">
+            <label for="female">жіноча</label>
+          </li>
+          <li>
+            <label for="age">Вік:</label>
+            <input type="text" name="age" id="age" size="3">
+            <label for="age">років.</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="more_about_yourself">
+        <legend><b>Детальніше про себе</b></legend>
+        <div class="smaller">
+          <ul>
+            <li>
+              <input type="radio" name="young" id="young_man" checked="">
+              <label for="young_man">Хлопець</label>
+            </li>
+            <li>
+              <input type="radio" name="young" id="young_woman">
+              <label for="young_woman">Дівчина</label>
+            </li>
+            <li>
+              <input type="text" name="birthday" id="birthday">
+              <label for="birthday">Дата народження</label>
+            </li>
+            <li>
+              <input type="text" name="marital_status" id="marital_status">
+              <label for="marital_status">Сімейний стан</label>
+            </li>
+            <li>
+              <input type="text" name="domicile" id="domicile">
+              <label for="domicile">Місце проживання</label>
+            </li>
+            <li>
+              <input type="text" name="profession" id="profession">
+              <label for="profession">Професія</label>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Як Ви зазвичай проводите вихідні?</h4>
+          <ul>
+            <li>
+              <input type="checkbox" name="weekend" id="sleeping">
+              <label for="sleeping">Сплю</label>
+            </li>
+            <li>
+              <input type="checkbox" name="weekend" id="walking">
+              <label for="walking">Гуляю з друзями</label>
+            </li>
+            <li>
+              <input type="checkbox" name="weekend" id="reading">
+              <label for="reading">Читаю книги</label>
+            </li>
+            <li>
+              <input type="checkbox" name="weekend" id="cooking">
+              <label for="cooking">Готую</label>
+            </li>
+            <li>
+              <input type="checkbox" name="weekend" id="playing">
+              <label for="playing">Граю в ігри</label>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Яку з представлених країн Ви порадили б відвідати?</h4>
+          <select>
+            <optgroup label="Європа">
+              <option>Чехія</option>
+              <option>Іспанія</option>
+              <option>Італія</option>
+            </optgroup>
+            <optgroup label="Азія">
+              <option>Китай</option>
+              <option>Індія</option>
+            </optgroup>
+            <optgroup label="Африка">
+              <option>ОАЕ</option>
+              <option>Саудівська Аравія</option>
+            </optgroup>
+            <optgroup label="Океанія">
+              <option>Японія</option>
+              <option>Австралія</option>
+              <option>Індонезія</option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <h4>Скільки книг Ви прочитали за все життя?</h4>
+          <ul>
+            <li>
+              <input type="radio" name="number_of_books" id="up_to_ten">
+              <label for="up_to_ten">0-10</label>
+            </li>
+            <li>
+              <input type="radio" name="number_of_books" id="up_to_twenty">
+              <label for="up_to_twenty">11-20</label>
+            </li>
+            <li>
+              <input type="radio" name="number_of_books" id="up_to_fifty">
+              <label for="up_to_fifty">21-50</label>
+            </li>
+            <li>
+              <input type="radio" name="number_of_books" id="more_than_fifty">
+              <label for="more_than_fifty">50+</label>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <label for="comments"><b>Ваші коментарі:</b></label>
+            </li>
+            <li>
+              <textarea cols="60" rows="10" id="comments"></textarea>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <select size="3">
+            <option selected="">Радитиму Ваш сайт :)</option>
+            <option>На один раз.</option>
+            <option>Поганий сайт!</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset class="in_conclusion">
+        <legend><b>І на завершення</b></legend>
+        <div class="other_design">
+          <ul>
+            <li>
+              <label hidden="" for="field"></label>
+              <input type="text" name="field" id="field" placeholder="Це поле було заповненим до Вас." size="25">
+            </li>
+            <li>
+              <label for="email"><b>Email:</b></label>
+            </li>
+            <li>
+              <input type="email" name="email" id="email" size="25">
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Хочете отримувати наш спам? :)</h4>
+          <span><i>Тоді оберіть категорії:</i></span>
+          <ul>
+            <li>
+              <input type="checkbox" name="learn_english" id="eng">
+              <label for="eng">Як вивчити англійську за 10 днів.</label>
+            </li>
+            <li>
+              <input type="checkbox" name="garden" id="garden">
+              <label for="garden">Сад та город.</label>
+            </li>
+            <li>
+              <input type="checkbox" name="make_money" id="money">
+              <label for="money">Як заробляти 100 тисяч на місяць.</label>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Наскільки складне завдання?</h4>
+          <ul>
+            <li>
+              <input type="radio" name="complexity" id="easy" checked="">
+              <label for="easy">Легко.</label>
+            </li>
+            <li>
+              <input type="radio" name="complexity" id="so_so">
+              <label for="so_so">Так собі.</label>
+            </li>
+            <li>
+              <input type="radio" name="complexity" id="complicated">
+              <label for="complicated">Складно.</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <label hidden="" for="s_but"></label>
+      <input type="submit" value="Відправити" id="s_but">
+    </form>
+  </main>
+</body>
+</html>
